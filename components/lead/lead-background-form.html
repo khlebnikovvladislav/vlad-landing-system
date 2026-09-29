@@ -1,0 +1,29 @@
+<!-- Vlad Landing System: Scenic Lead Form -->
+<section class="vls-lead-scene vls-section" id="lead" style="--lead-bg:url('REPLACE_WITH_IMAGE_URL')">
+  <div class="vls-container">
+    <div class="vls-lead-scene__box">
+      <div class="vls-lead-scene__copy">
+        <p class="vls-lead-scene__eyebrow">Финальный CTA</p>
+        <h2>Получите точный расчёт под вашу задачу</h2>
+        <p>Коротко объясните, что произойдёт после отправки формы и сколько времени это займёт.</p>
+      </div>
+
+      <div class="vls-lead-scene__proofs">
+        <article><strong>01</strong><span>Прозрачная стоимость</span></article>
+        <article><strong>02</strong><span>Консультация специалиста</span></article>
+        <article><strong>03</strong><span>Без обязательств</span></article>
+      </div>
+
+      <form class="vls-lead-scene__form">
+        <label><span>Имя</span><input type="text" name="name" placeholder="Ваше имя"></label>
+        <label><span>Телефон</span><input type="tel" name="phone" placeholder="+7 ___ ___-__-__"></label>
+        <button class="vls-button vls-button--primary" type="submit">Получить расчёт</button>
+        <small>Нажимая кнопку, пользователь соглашается с политикой обработки персональных данных.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+.vls-lead-scene__box{position:relative;overflow:hidden;min-height:560px;padding:56px;border-radius:var(--radius-xl,28px);background:linear-gradient(180deg,rgba(10,17,25,.12),rgba(10,17,25,.52)),var(--lead-bg) center/cover no-repeat;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}.vls-lead-scene__copy{max-width:680px}.vls-lead-scene__eyebrow{margin:0 0 12px;font-size:14px;font-weight:800}.vls-lead-scene h2{margin:0;font-size:clamp(36px,5vw,58px);line-height:1.03;letter-spacing:-.035em}.vls-lead-scene__copy>p{max-width:620px;margin:18px 0 0;font-size:18px;line-height:1.5;color:rgba(255,255,255,.86)}.vls-lead-scene__proofs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px;max-width:920px}.vls-lead-scene__proofs article{display:flex;gap:12px;align-items:center;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.94);color:#111318;backdrop-filter:blur(8px)}.vls-lead-scene__proofs strong{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#eef1f5;font-size:12px}.vls-lead-scene__proofs span{font-size:14px;font-weight:700}.vls-lead-scene__form{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin-top:18px;padding:20px;border-radius:18px;background:#fff;color:#111318}.vls-lead-scene__form label{display:grid;gap:7px}.vls-lead-scene__form label span{font-size:12px;font-weight:700;color:var(--color-muted,#666c78)}.vls-lead-scene__form input{width:100%;height:54px;padding:0 16px;border:1px solid var(--color-border,#e5e7eb);border-radius:12px;font:inherit;outline:none}.vls-lead-scene__form input:focus{border-color:var(--color-primary,#111827);box-shadow:0 0 0 3px rgba(17,24,39,.08)}.vls-lead-scene__form small{grid-column:1/-1;color:var(--color-muted,#666c78);font-size:11px;line-height:1.4}@media(max-width:900px){.vls-lead-scene__box{padding:38px}.vls-lead-scene__form{grid-template-columns:1fr 1fr}.vls-lead-scene__form button{grid-column:1/-1}.vls-lead-scene__proofs{grid-template-columns:1fr}}@media(max-width:600px){.vls-lead-scene__box{min-height:720px;padding:28px 18px;border-radius:20px}.vls-lead-scene__form{grid-template-columns:1fr;padding:16px}.vls-lead-scene__form button,.vls-lead-scene__form small{grid-column:auto}.vls-lead-scene__proofs article{padding:13px 14px}}
+</style>
