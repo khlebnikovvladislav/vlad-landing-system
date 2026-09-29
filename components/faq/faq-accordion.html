@@ -1,0 +1,33 @@
+<!-- Vlad Landing System: FAQ Accordion -->
+<section class="vls-faq vls-section">
+  <div class="vls-container vls-faq__wrap">
+    <div class="vls-faq__head">
+      <p class="vls-faq__eyebrow">FAQ</p>
+      <h2>Ответы на частые вопросы</h2>
+      <p>Сюда выносим реальные возражения и вопросы клиента перед заявкой.</p>
+    </div>
+
+    <div class="vls-faq__list">
+      <details open>
+        <summary>Как формируется стоимость?</summary>
+        <div class="vls-faq__answer">Короткий и конкретный ответ без маркетинговой воды. Укажите, от чего зависит цена и когда клиент получает финальную сумму.</div>
+      </details>
+      <details>
+        <summary>Какие сроки выполнения?</summary>
+        <div class="vls-faq__answer">Укажите типовой диапазон сроков и факторы, которые могут на него повлиять.</div>
+      </details>
+      <details>
+        <summary>Что входит в услугу?</summary>
+        <div class="vls-faq__answer">Перечислите основные этапы или дайте ссылку на подробный состав работ.</div>
+      </details>
+      <details>
+        <summary>Что нужно сделать, чтобы начать?</summary>
+        <div class="vls-faq__answer">Опишите следующий шаг: заявка, консультация, замер, диагностика или другой понятный сценарий.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<style>
+.vls-faq__wrap{display:grid;grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);gap:70px}.vls-faq__eyebrow{margin:0 0 10px;font-size:14px;font-weight:800;color:var(--color-muted,#666c78)}.vls-faq h2{margin:0;font-size:clamp(34px,4vw,48px);line-height:1.08;letter-spacing:-.03em}.vls-faq__head>p:last-child{margin:18px 0 0;color:var(--color-muted,#666c78);font-size:17px;line-height:1.55}.vls-faq__list{border-top:1px solid var(--color-border,#e5e7eb)}.vls-faq details{border-bottom:1px solid var(--color-border,#e5e7eb)}.vls-faq summary{position:relative;padding:22px 46px 22px 0;cursor:pointer;list-style:none;font-size:18px;font-weight:750;line-height:1.35}.vls-faq summary::-webkit-details-marker{display:none}.vls-faq summary::after{content:'+';position:absolute;right:2px;top:50%;transform:translateY(-50%);font-size:28px;font-weight:400;color:var(--color-muted,#666c78);transition:transform .2s ease}.vls-faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}.vls-faq__answer{padding:0 54px 24px 0;color:var(--color-muted,#666c78);font-size:16px;line-height:1.6}@media(max-width:800px){.vls-faq__wrap{grid-template-columns:1fr;gap:34px}}@media(max-width:600px){.vls-faq summary{font-size:17px;padding-block:19px}.vls-faq__answer{padding-right:22px}}
+</style>
