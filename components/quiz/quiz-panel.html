@@ -1,0 +1,39 @@
+<!-- Vlad Landing System: Quiz Panel -->
+<section class="vls-quiz vls-section">
+  <div class="vls-container">
+    <div class="vls-quiz__head">
+      <div>
+        <p class="vls-quiz__eyebrow">Расчёт / подбор / диагностика</p>
+        <h2>Ответьте на несколько вопросов и получите персональный расчёт</h2>
+      </div>
+      <span class="vls-quiz__step">Шаг 1 из 5</span>
+    </div>
+
+    <div class="vls-quiz__panel">
+      <div class="vls-quiz__main">
+        <h3>Что для вас сейчас актуальнее?</h3>
+        <div class="vls-quiz__options">
+          <label class="vls-quiz__option"><input type="radio" name="quiz-option"><span class="vls-quiz__thumb"></span><strong>Вариант 1</strong></label>
+          <label class="vls-quiz__option"><input type="radio" name="quiz-option"><span class="vls-quiz__thumb"></span><strong>Вариант 2</strong></label>
+          <label class="vls-quiz__option"><input type="radio" name="quiz-option"><span class="vls-quiz__thumb"></span><strong>Вариант 3</strong></label>
+          <label class="vls-quiz__option"><input type="radio" name="quiz-option"><span class="vls-quiz__thumb"></span><strong>Вариант 4</strong></label>
+        </div>
+        <div class="vls-quiz__footer">
+          <div class="vls-quiz__progress"><span style="width:20%"></span></div>
+          <button class="vls-button vls-button--primary" type="button">Далее</button>
+        </div>
+      </div>
+
+      <aside class="vls-quiz__aside">
+        <div class="vls-quiz__avatar" aria-hidden="true">👤</div>
+        <strong>Подсказка специалиста</strong>
+        <p>Коротко объясните, почему этот вопрос важен и что получит человек после прохождения квиза.</p>
+        <div class="vls-quiz__bonus">Бонус за прохождение: полезный материал / расчёт / консультация</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<style>
+.vls-quiz__head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px}.vls-quiz__eyebrow{margin:0 0 10px;font-size:14px;font-weight:700;color:var(--color-muted,#666c78)}.vls-quiz h2{margin:0;max-width:760px;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.03em}.vls-quiz__step{font-size:14px;color:var(--color-muted,#666c78);white-space:nowrap}.vls-quiz__panel{display:grid;grid-template-columns:minmax(0,1fr) 280px;background:#17181b;border-radius:var(--radius-lg,20px);overflow:hidden;box-shadow:var(--shadow-md)}.vls-quiz__main{padding:34px;background:#fff;margin:3px;border-radius:calc(var(--radius-lg,20px) - 2px)}.vls-quiz__main h3{margin:0 0 24px;font-size:24px}.vls-quiz__options{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.vls-quiz__option{display:block;cursor:pointer}.vls-quiz__option input{position:absolute;opacity:0;pointer-events:none}.vls-quiz__thumb{display:block;aspect-ratio:4/3;border:2px solid transparent;border-radius:12px;background:linear-gradient(135deg,#eef1f5,#dfe4ea);transition:.2s ease}.vls-quiz__option strong{display:block;margin-top:10px;font-size:14px}.vls-quiz__option input:checked + .vls-quiz__thumb{border-color:var(--color-primary,#111827);box-shadow:0 0 0 3px rgba(17,24,39,.10)}.vls-quiz__footer{display:flex;align-items:center;gap:20px;margin-top:34px}.vls-quiz__progress{height:6px;background:#eceff3;border-radius:999px;overflow:hidden;flex:1}.vls-quiz__progress span{display:block;height:100%;background:var(--color-primary,#111827);border-radius:inherit}.vls-quiz__aside{padding:34px 24px;color:#fff}.vls-quiz__avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#111;margin-bottom:18px}.vls-quiz__aside strong{font-size:18px}.vls-quiz__aside p{font-size:14px;line-height:1.5;color:#c9ccd2}.vls-quiz__bonus{margin-top:24px;padding:14px;border-radius:12px;background:#f7e783;color:#17181b;font-size:13px;line-height:1.4;font-weight:700}@media(max-width:900px){.vls-quiz__panel{grid-template-columns:1fr}.vls-quiz__aside{order:-1}.vls-quiz__options{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.vls-quiz__head{align-items:flex-start;flex-direction:column}.vls-quiz__main{padding:22px}.vls-quiz__options{grid-template-columns:1fr 1fr;gap:10px}.vls-quiz__footer{align-items:stretch;flex-direction:column}.vls-quiz__aside{padding:24px}}
+</style>
